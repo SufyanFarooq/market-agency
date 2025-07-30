@@ -126,7 +126,7 @@ const Stats = () => {
               We are always hiring
             </h3>
             <p className="text-lg text-gray-300 mb-6">
-              Join our brilliant and passionate team. You'll feel like a member of the family.
+              Join our brilliant and passionate team. You&apos;ll feel like a member of the family.
             </p>
             <a
               href="/careers"

@@ -33,7 +33,7 @@ const CustomerSupport = () => {
         </div>
 
         <p className="text-gray-600 mb-6 leading-relaxed text-sm">
-          A qualified assistant's assistance is essential for managing everyday duties and preventing energy from being wasted on non-productive activities. Managers and directors can now hire virtual assistants from anywhere in the world thanks to technological advancements. Customer support refers to the variety of services we provide to assist you in making the most of our product and resolving issues.
+          A qualified assistant&apos;s assistance is essential for managing everyday duties and preventing energy from being wasted on non-productive activities. Managers and directors can now hire virtual assistants from anywhere in the world thanks to technological advancements. Customer support refers to the variety of services we provide to assist you in making the most of our product and resolving issues.
         </p>
 
         <div className="space-y-3">
