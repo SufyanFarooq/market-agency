@@ -138,7 +138,7 @@ export default function AboutUs() {
             <div className="bg-secondary rounded-lg p-8">
               <h3 className="text-2xl font-bold text-text mb-4">Our Mission</h3>
               <p className="text-gray-600 leading-relaxed">
-                Virtual Communication PK (partnership) is designed to offer IT-enabled services and outsourcing, primarily to e-commerce businesses that generate significant returns on investment from web-based customers. To develop a call center workplace and system that enables our management team and agents to enthusiastically represent the values of our clients.
+                Unanimous Communication PK (partnership) is designed to offer IT-enabled services and outsourcing, primarily to e-commerce businesses that generate significant returns on investment from web-based customers. To develop a call center workplace and system that enables our management team and agents to enthusiastically represent the values of our clients.
               </p>
             </div>
             <div className="bg-secondary rounded-lg p-8">
@@ -153,7 +153,7 @@ export default function AboutUs() {
           <div className="bg-primary text-white rounded-lg p-8 mb-16">
             <h3 className="text-2xl font-bold mb-6">Awards and Recognition</h3>
             <p className="text-lg leading-relaxed">
-              We&apos;ve so far been able to forge a successful long-term partnership with a US-based client through the provision of IT-enabled services, live chat services, web development, CSS, and business development (telemarketing services). More recently, we began to offer them &quot;Virtual Sales/Marketing managers&quot; for their partners under the license of Virtual Communication Pk (partnership), which has began to advance significantly and we see great potential in terms of foreign recruitment and Outsourcing business from USA.
+              We&apos;ve so far been able to forge a successful long-term partnership with a US-based client through the provision of IT-enabled services, live chat services, web development, CSS, and business development (telemarketing services). More recently, we began to offer them &quot;Virtual Sales/Marketing managers&quot; for their partners under the license of Unanimous Communication Pk (partnership), which has began to advance significantly and we see great potential in terms of foreign recruitment and Outsourcing business from USA.
             </p>
           </div>
 

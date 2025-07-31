@@ -7,9 +7,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="text-2xl font-bold mb-4">VCPK</div>
+            {/* <div className="text-2xl font-bold mb-4">unanimous communications</div> */}
             <p className="text-gray-300 mb-4">
-              VIRTUAL COMMUNICATION PK is developed to provide outsourcing and IT enabled Services.
+            Unanimous Communication PK is developed to provide outsourcing and IT enabled Services.
             </p>
             <div className="space-y-2 text-sm text-gray-300">
               <div className="flex items-center">
@@ -23,7 +23,7 @@ const Footer = () => {
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
-                <span>contact@vcpk.org</span>
+                <span>contact@unanimouscommunications.pk</span>
               </div>
               <div className="flex items-center">
                 <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">

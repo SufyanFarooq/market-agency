@@ -42,14 +42,14 @@ export default function TermsConditions() {
               <div>
                 <h2 className="text-2xl font-bold text-primary mb-4">1. Acceptance of Terms</h2>
                 <p className="text-gray-700">
-                  By accessing and using the services provided by Virtual Communication PK (VCPK), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
+                  By accessing and using the services provided by Unanimous Communication PK (unanimous communications), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
                 </p>
               </div>
 
               <div>
                 <h2 className="text-2xl font-bold text-primary mb-4">2. Description of Service</h2>
                 <p className="text-gray-700 mb-4">
-                  VCPK provides the following services:
+                  unanimous communications provides the following services:
                 </p>
                 <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4">
                   <li>Call Center Services</li>
@@ -110,7 +110,7 @@ export default function TermsConditions() {
                   Intellectual property rights:
                 </p>
                 <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4">
-                  <li>All content on this website is owned by VCPK</li>
+                  <li>All content on this website is owned by unanimous communications</li>
                   <li>Custom software developed remains client property</li>
                   <li>Our methodologies and processes are proprietary</li>
                   <li>Client data and information remain confidential</li>
@@ -128,7 +128,7 @@ export default function TermsConditions() {
               <div>
                 <h2 className="text-2xl font-bold text-primary mb-4">8. Limitation of Liability</h2>
                 <p className="text-gray-700">
-                  VCPK shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or use, incurred by you or any third party, whether in an action in contract or tort, even if we have been advised of the possibility of such damages.
+                  unanimous communications shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, or use, incurred by you or any third party, whether in an action in contract or tort, even if we have been advised of the possibility of such damages.
                 </p>
               </div>
 
@@ -173,7 +173,7 @@ export default function TermsConditions() {
                 </p>
                 <div className="bg-gray-50 rounded-lg p-4 mt-4">
                   <p className="text-gray-700">
-                    <strong>Email:</strong> legal@vcpk.org<br />
+                    <strong>Email:</strong> legal@unanimous communications.org<br />
                     <strong>Address:</strong> Lahore, Punjab, Pakistan<br />
                     <strong>Phone:</strong> +92 XXX XXX XXXX
                   </p>

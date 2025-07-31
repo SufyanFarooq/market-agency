@@ -10,7 +10,7 @@ export default function About() {
                 About Us
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Virtual Communication PK (partnership) was created to offer IT-enabled services and outsourcing, primarily to e-commerce businesses that generate strong returns on investment from web-based customers.
+              Unanimous Communication PK (partnership) was created to offer IT-enabled services and outsourcing, primarily to e-commerce businesses that generate strong returns on investment from web-based customers.
               </p>
               <div className="space-y-4 mb-8">
                 <div className="flex items-center">

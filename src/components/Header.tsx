@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 const Header = () => {
@@ -26,7 +27,7 @@ const Header = () => {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
       isScrolled 
         ? 'bg-white/20 backdrop-blur-2xl shadow-2xl border-b-2 border-white/30' 
-        : 'bg-primary from-primary/95 via-accent/90 to-primary/95 shadow-lg'
+        : 'bg-white/20 backdrop-blur-2xl shadow-2xl border-b-2 border-white/30'
     }`}>
       {/* Background Pattern */}
       <div className={`absolute inset-0 transition-opacity duration-500 ${
@@ -43,7 +44,7 @@ const Header = () => {
           <div className="flex items-center space-x-6 text-sm">
             <div className="flex items-center group">
               <div className={`p-2 rounded-xl transition-all duration-500 ${
-                isScrolled ? 'bg-primary/20 text-primary' : 'bg-white/10 text-white'
+                isScrolled ? 'bg-primary/20 text-primary' : 'bg-primary/20 text-primary'
               } group-hover:bg-primary/30 group-hover:text-primary group-hover:scale-110`}>
                 <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
@@ -51,21 +52,21 @@ const Header = () => {
                 </svg>
               </div>
               <span className={`ml-2 transition-colors duration-500 font-medium text-xs ${
-                isScrolled ? 'text-primary' : 'text-white/90'
+                isScrolled ? 'text-primary' : 'text-primary'
               } group-hover:text-primary`}>
-                contact@vcpk.org
+                contact@unanimouscommunications.pk
               </span>
             </div>
             <div className="flex items-center group">
               <div className={`p-2 rounded-xl transition-all duration-500 ${
-                isScrolled ? 'bg-primary/20 text-primary' : 'bg-white/10 text-white'
+                isScrolled ? 'bg-primary/20 text-primary' : 'bg-primary/20 text-primary'
               } group-hover:bg-primary/30 group-hover:text-primary group-hover:scale-110`}>
                 <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                 </svg>
               </div>
               <span className={`ml-2 transition-colors duration-500 font-medium text-xs ${
-                isScrolled ? 'text-primary' : 'text-white/90'
+                isScrolled ? 'text-primary' : 'text-primary'
               } group-hover:text-primary`}>
                 Lahore, Punjab
               </span>
@@ -78,16 +79,15 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center group">
-              <div className={`text-2xl font-bold transition-all duration-500 ${
-                isScrolled ? 'text-primary drop-shadow-lg' : 'text-white'
-              } group-hover:scale-110 drop-shadow-lg`}>
-                VCPK
+              <div className="relative w-40 h-40 transition-all duration-500 group-hover:scale-110">
+                <Image
+                  src="/assets/logo.png"
+                  alt="unanimous communications Logo"
+                  fill
+                  className="object-contain drop-shadow-lg"
+                  priority
+                />
               </div>
-              <span className={`ml-3 text-sm font-medium transition-all duration-500 ${
-                isScrolled ? 'text-primary/90' : 'text-white/90'
-              } group-hover:text-primary`}>
-                Virtual Communication PK
-              </span>
             </Link>
           </div>
 
@@ -110,10 +110,10 @@ const Header = () => {
                     isActive
                       ? isScrolled 
                         ? 'text-primary bg-primary/10' 
-                        : 'text-white bg-white/10'
+                        : 'text-primary bg-primary/10'
                       : isScrolled 
                         ? 'text-primary hover:text-primary hover:bg-primary/10' 
-                        : 'text-white/90 hover:text-white hover:bg-white/10'
+                        : 'text-primary hover:text-primary hover:bg-primary/10'
                   }`}
                 >
                 {/* Background Line Effect */}
@@ -153,7 +153,7 @@ const Header = () => {
               className={`p-2 rounded-xl transition-all duration-500 ${
                 isScrolled 
                   ? 'text-primary hover:bg-primary/20' 
-                  : 'text-white hover:bg-white/10'
+                  : 'text-primary hover:bg-primary/20'
               }`}
             >
               <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -173,7 +173,7 @@ const Header = () => {
             <div className={`px-2 pt-2 pb-3 space-y-2 sm:px-3 border-t-2 transition-all duration-500 ${
               isScrolled 
                 ? 'bg-white/20 backdrop-blur-2xl border-white/30' 
-                : 'bg-white/10 backdrop-blur-xl border-white/20'
+                : 'bg-white/20 backdrop-blur-2xl border-white/30'
             }`}>
               {[
                 { href: '/', label: 'Home' },
@@ -192,10 +192,10 @@ const Header = () => {
                       isActive
                         ? isScrolled 
                           ? 'text-primary bg-primary/10' 
-                          : 'text-white bg-white/10'
+                          : 'text-primary bg-primary/10'
                         : isScrolled 
                           ? 'text-primary hover:text-primary hover:bg-primary/10' 
-                          : 'text-white hover:bg-white/10'
+                          : 'text-primary hover:text-primary hover:bg-primary/10'
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                   >

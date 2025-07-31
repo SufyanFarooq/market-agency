@@ -197,8 +197,8 @@ export default function Contact() {
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold text-text mb-2">Email</h3>
                     <p className="text-gray-600">
-                      <a href="mailto:contact@vcpk.org" className="hover:text-primary transition-colors duration-200">
-                        contact@vcpk.org
+                      <a href="mailto:contact@unanimous communications.org" className="hover:text-primary transition-colors duration-200">
+                        contact@unanimous communications.org
                       </a>
                     </p>
                   </div>

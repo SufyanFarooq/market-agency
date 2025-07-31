@@ -140,7 +140,7 @@ export default function PrivacyPolicy() {
                 </p>
                 <div className="bg-gray-50 rounded-lg p-4 mt-4">
                   <p className="text-gray-700">
-                    <strong>Email:</strong> privacy@vcpk.org<br />
+                    <strong>Email:</strong> privacy@unanimous communications.org<br />
                     <strong>Address:</strong> Lahore, Punjab, Pakistan<br />
                     <strong>Phone:</strong> +92 XXX XXX XXXX
                   </p>
