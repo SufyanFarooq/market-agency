@@ -54,7 +54,7 @@ const Header = () => {
               <span className={`ml-2 transition-colors duration-500 font-medium text-xs ${
                 isScrolled ? 'text-primary' : 'text-primary'
               } group-hover:text-primary`}>
-                contact@unanimouscommunications.pk
+                unanimouscommunications89@gmail.com
               </span>
             </div>
             <div className="flex items-center group">

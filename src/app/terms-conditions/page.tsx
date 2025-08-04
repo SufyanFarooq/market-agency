@@ -52,12 +52,11 @@ export default function TermsConditions() {
                   unanimous communications provides the following services:
                 </p>
                 <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4">
-                  <li>Call Center Services</li>
-                  <li>Customer Support</li>
                   <li>Live Chat Support</li>
+                  <li>Customer Support</li>
                   <li>Virtual Assistance</li>
-                  <li>Software Development</li>
                   <li>SEO Services</li>
+                  <li>Call Center Services</li>
                 </ul>
               </div>
 

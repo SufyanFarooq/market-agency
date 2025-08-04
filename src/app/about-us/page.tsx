@@ -5,19 +5,16 @@ import Link from 'next/link';
 export default function AboutUs() {
   const leadership = [
     {
-      name: "Mubashir Ali",
-      position: "Managing Director",
-      image: "/images/mubashir-ali.jpg"
+      name: " Nauman Khan",
+      position: "CEO",
+      image: "/images/mubashir-ali.jpg",
+      description: "Leading our organization with strategic vision and operational excellence."
     },
     {
-      name: "M. Hassan Khan",
-      position: "Senior Manager Operations",
-      image: "/images/hassan-khan.jpg"
-    },
-    {
-      name: "Mubeena Tariq",
-      position: "Human Resources Manager",
-      image: "/images/mubeena-tariq.jpg"
+      name: "Muhammad Faisal",
+      position: "Managing Director/partner",
+      image: "/images/hassan-khan.jpg",
+      description: "Overseeing day-to-day operations and ensuring smooth service delivery."
     }
   ];
 
@@ -77,10 +74,10 @@ export default function AboutUs() {
                   <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
                   <span className="text-gray-700">Well-Managed Virtual support Assistants</span>
                 </div>
-                <div className="flex items-center">
+                {/* <div className="flex items-center">
                   <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
                   <span className="text-gray-700">Web Development</span>
-                </div>
+                </div> */}
               </div>
               <Link
                 href="/services"
@@ -138,7 +135,8 @@ export default function AboutUs() {
             <div className="bg-secondary rounded-lg p-8">
               <h3 className="text-2xl font-bold text-text mb-4">Our Mission</h3>
               <p className="text-gray-600 leading-relaxed">
-                Unanimous Communication PK (partnership) is designed to offer IT-enabled services and outsourcing, primarily to e-commerce businesses that generate significant returns on investment from web-based customers. To develop a call center workplace and system that enables our management team and agents to enthusiastically represent the values of our clients.
+                Unanimous Communication PK (partnership) is designed to offer IT-enabled services and outsourcing, primarily to e-commerce businesses that generate significant returns on investment from web-based customers. To develop a customer care center 
+                workplace and system that enables our management team and agents to enthusiastically represent the values of our clients.
               </p>
             </div>
             <div className="bg-secondary rounded-lg p-8">
@@ -150,12 +148,12 @@ export default function AboutUs() {
           </div>
 
           {/* Awards and Recognition */}
-          <div className="bg-primary text-white rounded-lg p-8 mb-16">
+          {/* <div className="bg-primary text-white rounded-lg p-8 mb-16">
             <h3 className="text-2xl font-bold mb-6">Awards and Recognition</h3>
             <p className="text-lg leading-relaxed">
               We&apos;ve so far been able to forge a successful long-term partnership with a US-based client through the provision of IT-enabled services, live chat services, web development, CSS, and business development (telemarketing services). More recently, we began to offer them &quot;Virtual Sales/Marketing managers&quot; for their partners under the license of Unanimous Communication Pk (partnership), which has began to advance significantly and we see great potential in terms of foreign recruitment and Outsourcing business from USA.
             </p>
-          </div>
+          </div> */}
 
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
@@ -190,7 +188,7 @@ export default function AboutUs() {
               </div>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {leadership.map((member, index) => (
                 <div key={index} className="bg-secondary rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-300">
                   <div className="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">

@@ -4,26 +4,32 @@ import Footer from '@/components/Footer';
 export default function OurTeam() {
   const teamMembers = [
     {
-      name: "Mubashir Ali",
-      position: "Managing Director",
+      name: " Nauman Khan",
+      position: "CEO",
       image: "/images/mubashir-ali.jpg",
       description: "Leading our organization with strategic vision and operational excellence."
     },
     {
-      name: "M. Hassan Khan",
-      position: "Senior Manager Operations",
+      name: "Muhammad Faisal",
+      position: "Managing Director/partner",
       image: "/images/hassan-khan.jpg",
       description: "Overseeing day-to-day operations and ensuring smooth service delivery."
     },
-    {
-      name: "Mubeena Tariq",
-      position: "Human Resources Manager",
-      image: "/images/mubeena-tariq.jpg",
-      description: "Managing our talented workforce and fostering a positive work environment."
-    }
+    // {
+    //   name: "Mubeena Tariq",
+    //   position: "Human Resources Manager",
+    //   image: "/images/mubeena-tariq.jpg",
+    //   description: "Managing our talented workforce and fostering a positive work environment."
+    // }
   ];
 
   const departments = [
+    {
+      name: "Live chat support",
+      description: "Our dedicated customer service representatives who handle all types of live chats with professionalism and care.",
+      icon: "💬",
+      count: "20+"
+    },
     {
       name: "Call Center Team",
       description: "Our dedicated customer service representatives who handle inbound and outbound calls with professionalism and care.",
@@ -35,12 +41,6 @@ export default function OurTeam() {
       description: "Expert technicians providing technical assistance and troubleshooting for our clients.",
       icon: "🛠️",
       count: "15+"
-    },
-    {
-      name: "Web Development",
-      description: "Skilled developers creating innovative web solutions and digital experiences.",
-      icon: "💻",
-      count: "10+"
     },
     {
       name: "SEO & Marketing",
@@ -89,7 +89,7 @@ export default function OurTeam() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             {teamMembers.map((member, index) => (
               <div key={index} className="bg-secondary rounded-lg p-8 text-center hover:shadow-lg transition-shadow duration-300">
                 <div className="w-40 h-40 bg-gray-300 rounded-full mx-auto mb-6 flex items-center justify-center">

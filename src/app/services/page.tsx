@@ -44,7 +44,7 @@ export default function Services() {
                 Services we provide:
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                We provide human resource in Pakistan which can help them achieve the same business tasks but in far less cost and hassle free resource management in the Area of Business development, Telemarketing, SEO, Web development, IT Enabled services and Web based Live Chat Services.
+                We provide human resource in Pakistan which can help them achieve the same business tasks but in far less cost and hassle free resource management in the Area of Business development, Telemarketing, SEO and Web based Live Chat Services.
               </p>
               <p className="text-lg text-gray-700 mt-4 leading-relaxed">
                 We are targeting USA, CANADA, UK, and Australian Clients, our focus is to find companies that are already providing the Ecommerce based Services to their client Websites in USA, Canada, UK and Australia.
@@ -54,12 +54,12 @@ export default function Services() {
 
           {/* Services Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+            <LiveChatSupport />
             <CallCenter />
-            <SoftwareDevelopment />
+            {/* <SoftwareDevelopment /> */}
             <SEO />
             <CustomerSupport />
             <VirtualAssistance />
-            <LiveChatSupport />
           </div>
 
           {/* How We Work Section */}
@@ -74,7 +74,7 @@ export default function Services() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               {[
                 {
-                  title: "We Are Leading in Call Center Service",
+                  title: " We are leading in web based Live chat services",
                   icon: "🏆"
                 },
                 {
