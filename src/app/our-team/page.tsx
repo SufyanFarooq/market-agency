@@ -1,26 +1,21 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 
 export default function OurTeam() {
   const teamMembers = [
     {
       name: " Nauman Khan",
       position: "CEO",
-      image: "/images/mubashir-ali.jpg",
+      image: "/assets/profile/Nauman-Khan.jpeg",
       description: "Leading our organization with strategic vision and operational excellence."
     },
     {
       name: "Muhammad Faisal",
       position: "Managing Director/partner",
-      image: "/images/hassan-khan.jpg",
+      image: "/assets/profile/Muhammad-Faisal.jpeg",
       description: "Overseeing day-to-day operations and ensuring smooth service delivery."
-    },
-    // {
-    //   name: "Mubeena Tariq",
-    //   position: "Human Resources Manager",
-    //   image: "/images/mubeena-tariq.jpg",
-    //   description: "Managing our talented workforce and fostering a positive work environment."
-    // }
+    }
   ];
 
   const departments = [
@@ -92,9 +87,15 @@ export default function OurTeam() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             {teamMembers.map((member, index) => (
               <div key={index} className="bg-secondary rounded-lg p-8 text-center hover:shadow-lg transition-shadow duration-300">
-                <div className="w-40 h-40 bg-gray-300 rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <span className="text-6xl text-gray-600">👤</span>
-                </div>
+                <div className="relative w-32 h-32 mx-auto mb-4">
+                    <Image
+                      src={member.image}
+                      alt={`${member.name} - ${member.position}`}
+                      fill
+                      className="object-cover rounded-full"
+                      sizes="128px"
+                    />
+                  </div>
                 <h3 className="text-2xl font-bold text-text mb-2">
                   {member.name}
                 </h3>

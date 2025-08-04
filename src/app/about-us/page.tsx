@@ -1,19 +1,20 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function AboutUs() {
   const leadership = [
     {
       name: " Nauman Khan",
       position: "CEO",
-      image: "/images/mubashir-ali.jpg",
+      image: "/assets/profile/Nauman-Khan.jpeg",
       description: "Leading our organization with strategic vision and operational excellence."
     },
     {
       name: "Muhammad Faisal",
       position: "Managing Director/partner",
-      image: "/images/hassan-khan.jpg",
+      image: "/assets/profile/Muhammad-Faisal.jpeg",
       description: "Overseeing day-to-day operations and ensuring smooth service delivery."
     }
   ];
@@ -191,8 +192,14 @@ export default function AboutUs() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {leadership.map((member, index) => (
                 <div key={index} className="bg-secondary rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-300">
-                  <div className="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-4xl text-gray-600">👤</span>
+                  <div className="relative w-32 h-32 mx-auto mb-4">
+                    <Image
+                      src={member.image}
+                      alt={`${member.name} - ${member.position}`}
+                      fill
+                      className="object-cover rounded-full"
+                      sizes="128px"
+                    />
                   </div>
                   <h3 className="text-xl font-semibold text-text mb-2">
                     {member.name}
