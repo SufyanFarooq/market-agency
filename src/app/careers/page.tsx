@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 
 export default function Careers() {
   const [selectedJob, setSelectedJob] = useState<string>('');
+  const [showJobs, setShowJobs] = useState<boolean>(true); // New state to control job visibility
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -136,52 +137,92 @@ export default function Careers() {
           <div className="text-center mb-12">
             <div className="bg-gradient-to-r from-primary/20 to-accent/20 backdrop-blur-sm rounded-3xl border-2 border-primary/30 shadow-2xl px-8 py-6 mb-6 max-w-3xl mx-auto transform hover:scale-105 transition-all duration-300">
               <h2 className="text-3xl md:text-4xl font-bold text-text mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Open Positions
+                {showJobs ? 'Open Positions' : 'Career Opportunities'}
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                We are always looking for talented individuals who are passionate about delivering exceptional service and contributing to our success.
+                {showJobs 
+                  ? 'We are always looking for talented individuals who are passionate about delivering exceptional service and contributing to our success.'
+                  : 'Stay connected with us for future opportunities and updates.'
+                }
               </p>
+            </div>
+            
+            {/* Toggle Button */}
+            <div className="flex justify-center mb-8">
+              <button
+                onClick={() => setShowJobs(!showJobs)}
+                className="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-800 transition-colors duration-200 shadow-lg"
+              >
+                {showJobs ? 'Hide Jobs' : 'Show Available Jobs'}
+              </button>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-            {jobs.map((job) => (
-              <div key={job.id} className="bg-secondary rounded-lg p-8 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-2xl font-bold text-text">{job.title}</h3>
-                  <span className="bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">
-                    {job.type}
-                  </span>
+          {/* Jobs Section */}
+          {showJobs && (
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+              {jobs.map((job) => (
+                <div key={job.id} className="bg-secondary rounded-lg p-8 hover:shadow-lg transition-shadow duration-300">
+                  <div className="flex justify-between items-start mb-4">
+                    <h3 className="text-2xl font-bold text-text">{job.title}</h3>
+                    <span className="bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">
+                      {job.type}
+                    </span>
+                  </div>
+                  <div className="space-y-2 mb-4">
+                    <p className="text-gray-600">
+                      <span className="font-medium">Department:</span> {job.department}
+                    </p>
+                    <p className="text-gray-600">
+                      <span className="font-medium">Location:</span> {job.location}
+                    </p>
+                  </div>
+                  <p className="text-gray-700 mb-4">{job.description}</p>
+                  <div className="mb-6">
+                    <h4 className="font-semibold text-text mb-2">Requirements:</h4>
+                    <ul className="space-y-1">
+                      {job.requirements.map((req, index) => (
+                        <li key={index} className="flex items-center text-gray-600">
+                          <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                          {req}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <button
+                    onClick={() => setSelectedJob(job.id)}
+                    className="bg-primary text-white px-6 py-2 rounded-lg font-semibold hover:bg-purple-800 transition-colors duration-200"
+                  >
+                    Apply Now
+                  </button>
                 </div>
-                <div className="space-y-2 mb-4">
-                  <p className="text-gray-600">
-                    <span className="font-medium">Department:</span> {job.department}
+              ))}
+            </div>
+          )}
+
+          {/* No Vacancy Section */}
+          {!showJobs && (
+            <div className="text-center py-16">
+              <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-3xl border-2 border-gray-200 shadow-xl px-8 py-12 max-w-2xl mx-auto">
+                <div className="text-6xl mb-6">🔍</div>
+                <h3 className="text-3xl font-bold text-text mb-4">
+                  No Vacancy Available Right Now
+                </h3>
+                <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                  We currently don't have any open positions, but we're always on the lookout for exceptional talent. 
+                  Keep checking back or leave your details with us for future opportunities.
+                </p>
+                <div className="space-y-4">
+                  <p className="text-gray-500">
+                    📧 Send your resume to: <span className="text-primary font-medium">careers@company.com</span>
                   </p>
-                  <p className="text-gray-600">
-                    <span className="font-medium">Location:</span> {job.location}
+                  <p className="text-gray-500">
+                    🔔 Follow us for updates on new openings
                   </p>
                 </div>
-                <p className="text-gray-700 mb-4">{job.description}</p>
-                <div className="mb-6">
-                  <h4 className="font-semibold text-text mb-2">Requirements:</h4>
-                  <ul className="space-y-1">
-                    {job.requirements.map((req, index) => (
-                      <li key={index} className="flex items-center text-gray-600">
-                        <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                        {req}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <button
-                  onClick={() => setSelectedJob(job.id)}
-                  className="bg-primary text-white px-6 py-2 rounded-lg font-semibold hover:bg-purple-800 transition-colors duration-200"
-                >
-                  Apply Now
-                </button>
               </div>
-            ))}
-          </div>
+            </div>
+          )}
         </div>
       </section>
 
