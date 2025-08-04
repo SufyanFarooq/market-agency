@@ -120,7 +120,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-300">
-            Copyright © {new Date().getFullYear()}. All rights reserved.
+          © 2022 - {new Date().getFullYear()} | All Rights Reserve | Powered by <a href="https://techtunix.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-400">Techtunix</a>
           </p>
         </div>
       </div>
