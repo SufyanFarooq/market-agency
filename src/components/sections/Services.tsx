@@ -56,7 +56,7 @@ export default function Services() {
                 Our Services
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                We provide human resources in Pakistan with hassle-free resource management in the areas of Business Development, Telemarketing, SEO, outsourcing, Web Development, and IT-Enabled Services.
+                We provide human resources in Pakistan with hassle-free resource management in the areas of Business Development, Telemarketing, SEO, outsourcing, and IT-Enabled Services.
               </p>
             </div>
           </div>

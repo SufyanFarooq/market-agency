@@ -33,10 +33,10 @@ export default function About() {
                   <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
                   <span className="text-gray-700">Well-Managed Virtual support Assistants</span>
                 </div>
-                <div className="flex items-center">
+                {/* <div className="flex items-center">
                   <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
                   <span className="text-gray-700">Web Development</span>
-                </div>
+                </div> */}
               </div>
               <Link
                 href="/about-us"

@@ -38,7 +38,7 @@ const Hero = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 3000); // Reduced from 5000ms to 3000ms (3 seconds)
 
     return () => clearInterval(timer);
   }, [slides.length]);

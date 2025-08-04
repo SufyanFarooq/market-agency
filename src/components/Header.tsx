@@ -84,6 +84,7 @@ const Header = () => {
                   src="/assets/logo.png"
                   alt="unanimous communications Logo"
                   fill
+                  sizes="160px"
                   className="object-contain drop-shadow-lg"
                   priority
                 />
