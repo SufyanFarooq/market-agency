@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 export const metadata: Metadata = {
   title: "Unanimous Communication PK - IT-Enabled Services & Outsourcing",
   description: "Unanimous Communication PK provides IT-enabled services and outsourcing, primarily to e-commerce businesses. We offer call center services, SEO, virtual assistance, and live chat support.",
@@ -46,6 +46,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased" suppressHydrationWarning={true}>
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
