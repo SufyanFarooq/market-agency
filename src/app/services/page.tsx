@@ -105,11 +105,11 @@ export default function Services() {
               <div className="text-gray-600">Years of Experience</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">1000+</div>
-              <div className="text-gray-600">Calls Per Day</div>
+              <div className="text-4xl font-bold text-primary mb-2">500+</div>
+              <div className="text-gray-600">Chats Per Day</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">500+</div>
+              <div className="text-4xl font-bold text-primary mb-2">100+</div>
               <div className="text-gray-600">Trusted Clients</div>
             </div>
             <div className="text-center">

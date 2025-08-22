@@ -8,12 +8,12 @@ export default function Services() {
         icon: "📞",
         image: "/assets/services/call-center.jpg"
       },
-      {
-        title: "Software Development",
-        description: "It is a method to develop a computer platform that offers capabilities to fulfill clients' personal or business goals utilizing programming.",
-        icon: "💻",
-        image: "/assets/services/software-development.jpg"
-      },
+      // {
+      //   title: "Software Development",
+      //   description: "It is a method to develop a computer platform that offers capabilities to fulfill clients' personal or business goals utilizing programming.",
+      //   icon: "💻",
+      //   image: "/assets/services/software-development.jpg"
+      // },
       {
         title: "SEO",
         description: "Since search engine optimization or SEO is the most common way for people to find and access online material, having a solid SEO strategy is important.",

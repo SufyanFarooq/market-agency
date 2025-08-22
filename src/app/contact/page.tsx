@@ -180,7 +180,7 @@ export default function Contact() {
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold text-text mb-2">Address</h3>
                     <p className="text-gray-600">
-                      Plot 14, DHA Phase 8 - Ex Park View Block D Park View CHS, Lahore, Punjab
+                    7-C commercial area sector market Pak Arab housing society Lahore Pakistan
                     </p>
                   </div>
                 </div>
@@ -197,14 +197,14 @@ export default function Contact() {
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold text-text mb-2">Email</h3>
                     <p className="text-gray-600">
-                      <a href="mailto:contact@unanimous communications.org" className="hover:text-primary transition-colors duration-200">
-                        contact@unanimous communications.org
+                      <a href="mailto:unanimouscommunications89@gmail.com" className="hover:text-primary transition-colors duration-200">
+                      unanimouscommunications89@gmail.com
                       </a>
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start">
+                {/* <div className="flex items-start">
                   <div className="flex-shrink-0">
                     <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
                       <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -220,7 +220,7 @@ export default function Contact() {
                       </a>
                     </p>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="flex items-start">
                   <div className="flex-shrink-0">
