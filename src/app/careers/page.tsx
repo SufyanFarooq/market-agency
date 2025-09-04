@@ -214,7 +214,7 @@ export default function Careers() {
                 </p>
                 <div className="space-y-4">
                   <p className="text-gray-500">
-                    📧 Send your resume to: <span className="text-primary font-medium">unanimouscommunications89@gmail.com</span>
+                    📧 Send your resume to: <span className="text-primary font-medium">contactus@ucpk.live</span>
                   </p>
                   <p className="text-gray-500">
                     🔔 Follow us for updates on new openings
